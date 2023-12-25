@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+
+/*----------------------------------------------- Body --------------------------------------------------------------------------*/
+body{
+    background: url(bg5.jpg);
+    font-family: Nunito Sans;
+    height: 400px;    
+}
+
+.section3 {
+  margin-top: 0;
+  padding: 10px;
+  height: 500px;
+}
+ /*------------------------------------------------------- container 1 ----------------------------------------------------------*/
+ .container1{
+
+    position: relative;
+      z-index: 2;
+      width: 1200px;
+     /* height: 100%;*/
+      margin-top: 20px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 2rem;
+      background-color:#fff;
+  }
+  .Contact {
+  
+    width: 700px;
+    height: 500px;
+    margin-top: -10px;
+    margin-left: -10px;
+    
+  }
+  /* -------------------------------------------------form------------------------------------------*/
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 450px;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-left: 50px;
+    border-radius: 20px;
+    margin-right: -10px;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #380d0a;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color:  #481612;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color:  #310c0a;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message, .signin {
+    color: rgba(27, 6, 6, 0.822);
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: #4f1915;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline  #6c221d;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 350px;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: rgb(112, 35, 21);
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: #591f1a;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color:  #9a241cea;
+  }
+  
